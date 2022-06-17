@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/donaciones.css">
     <title>Salvappvidas</title>
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Salvappvidas</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +18,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="main.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Configuración</a>
@@ -30,7 +31,7 @@
                     Donaciones
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="donaciones.html">Hacer donación</a></li>
+                  <li><a class="dropdown-item" href="#">Hacer donación</a></li>
                   <li><a class="dropdown-item" href="centros.html">Ver centros de donaciones</a></li>
                 </ul>
               </li>
@@ -38,7 +39,36 @@
           </div>
         </div>
       </nav>
-    <h1>HOLA PADRE</h1>
+    <main role="main" class="container">
+        <header class="row">
+            <div class="col-5 donationcard bg-light">
+                <div class="container-fluid mx-4 padear mt-4">
+                    <header>
+                        <h3>Donaciones</h3>
+                    </header>
+                    <form action="" class="mt-4">
+                        <label for="Nombre" class="form-label mt-2">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Juan">
+                        <label for="Mail" class="form-label mt-2">Mail</label>
+                        <input type="text" class="form-control" placeholder="Juan@gmail.com">
+                        <label for="NumeroDeTelefono" class="form-label mt-2">Numero de telefono</label>
+                        <input type="text" class="form-control" placeholder="2212341234">
+                        <label for="TipoDonacion" class="form-label mt-2">Tipo de donacion</label>
+                        <select name="TipoDonacion" id="TipoDonacion" class="form-select">
+                            <option value="Ropa">Ropa</option>
+                            <option value="Sangre">Sangre</option>
+                            <option value="Comida">Comida</option>
+                        </select>
+                        <div class="d-grid gap-2 mt-5 align-bottom">
+                            <a href="centros.html" class="btn btn-primary">Continuar</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h1></h1>
+        </header>
+    </main>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
