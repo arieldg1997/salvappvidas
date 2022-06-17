@@ -1,0 +1,58 @@
+.donationcard{
+    min-height: 100vh;
+}
+
+.pantalla100{
+    min-height: 100vh; 
+} 
+
+.padear {
+    padding-right: 30px;
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
+    min-width: 95vw;
+    min-height: 95vh;
+}
+
+.imagenCircular {
+    width:50px;
+    height:50px;
+    border-radius: 150px;
+}
+
+body {
+    /* Location of the image */
+    background-image: url("../Images/mapa.jpg");
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when
+    the content's height is greater than the image's height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+    while the background image is loading */
+    background-color: #464646;
+}
+
+.rectangulo1{
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    left: 0px;
+    bottom: -80px;
+
+    background: #65D1CD;
+    border-radius: 0px 400px 0px 0px;
+}
