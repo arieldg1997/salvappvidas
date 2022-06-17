@@ -1,44 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Salvappvidas</title>
-</head>
-<body>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Salvappvidas</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="configuracion.html">Configuración</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Más info</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Donaciones
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="donaciones.html">Hacer donación</a></li>
-                  <li><a class="dropdown-item" href="centros.html">Ver centros de donaciones</a></li>
-                </ul>
-              </li>
-            </ul>
+  </head>
+  <body>
+    <nav
+      id="nav"
+      class="navbar navbar-expand-lg sticky-top"
+      style="background-color: white"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" id="salvappvidas_logo" href="#">Salvappvidas</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Configuración</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Más info</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Donaciones
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Hacer donación</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Ver centros de donaciones</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container-fluid article">
+        <div class="row" id="full-row">
+          <div class="col-8 screen_article">
+            <div class="row">
+              <div class="col">
+                <h1 class="center bold">
+                  Bienvenido a la plataforma de soporte ante las inundaciones de
+                  La Plata
+                </h1>
+              </div>
+              <div class="col-xs-6"><div class="barra"></div></div>
+              <div class="col-xs-6">
+                <p class="sub_title">
+                  Encontrá información actualizada de las precipitaciones en la
+                  ciudad. Además podés encontrar puntos de ayuda y donar para
+                  quien lo necesite.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div>
+              <picture>
+                <img
+                  class="img"
+                  src="img/plaza_moreno.png"
+                  alt="Plaza Moreno"
+                />
+              </picture>
+            </div>
           </div>
         </div>
-      </nav>
-    <h1>HOLA PADRE</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+      </div>
+    </header>
+    <article>
+      <div
+        class="container-fluid article alternative_background"
+        style="position: relative"
+      >
+        <div class="article_2_text">
+          <h1 class="segundo_titulo">Probabilidad de riesgo</h1>
+          <div class="barrita"></div>
+          <h1 class="segundo_subtitulo">Baja</h1>
+        </div>
+        <div class="img_article2">
+          <img
+            class="img-left"
+            src="img/tik.png"
+            alt="Icono que muestra la situación climatológica"
+          />
+          <img
+            class="img-right"
+            src="img/illustration.png"
+            alt="Imagen que ilustra el clima"
+          />
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="container-fluid article" id="full-row">
+        <div class="row">
+          <div class="col-8 screen_article full">
+            <div class="">
+              <h1 class="tercer_titulo">Líneas de contacto</h1>
+              <div class="barrita2"></div>
+              <div class="row" style="height: 100px">
+                <div class="col" style="margin: 0; padding: 0">
+                  <img
+                    class=""
+                    src="img/bombera.png"
+                    alt="Imagen que ilustra una bombera"
+                    style="height: 100px; width: auto"
+                  />
+                </div>
+                <div class="col" style="margin: 0; padding: 0">
+                  <div class="row">
+                    <div class="col" style="margin: 0; padding: 0">
+                      <h1
+                        class="segundo_segundo_subtitulo"
+                        style="margin: 0; padding: 0"
+                      >
+                        Bomberos
+                      </h1>
+                    </div>
+                    <div class="col" style="margin: 0; padding: 0">
+                      <span style="width: 100px">100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="row" style="height: 100px">
+                <div class="col" style="margin: 0; padding: 0">
+                  <img
+                    class=""
+                    src="img/policia.png"
+                    alt="Imagen que ilustra una policia"
+                    style="height: 100px; width: auto"
+                  />
+                </div>
+                <div class="col" style="margin: 0; padding: 0">
+                  <div class="row">
+                    <div class="col" style="margin: 0; padding: 0">
+                      <h1
+                        class="segundo_segundo_subtitulo"
+                        style="margin: 0; padding: 0"
+                      >
+                        Policía
+                      </h1>
+                    </div>
+                    <div class="col" style="margin: 0; padding: 0">
+                      <span style="width: 100px">911</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="row" style="height: 100px">
+                <div class="col" style="margin: 0; padding: 0">
+                  <img
+                    class=""
+                    src="img/enfermero.png"
+                    alt="Imagen que ilustra un enfermero"
+                    style="height: 100px; width: auto"
+                  />
+                </div>
+                <div class="col" style="margin: 0; padding: 0">
+                  <div class="row">
+                    <div class="col" style="margin: 0; padding: 0">
+                      <h1
+                        class="segundo_segundo_subtitulo"
+                        style="margin: 0; padding: 0"
+                      >
+                        Hospital
+                      </h1>
+                    </div>
+                    <div class="col" style="margin: 0; padding: 0">
+                      <span style="width: 100px">107</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" style="margin-top: 0; margin-right: 100px">
+            <picture>
+              <img
+                class="img-left-2"
+                src="img/municipalidad.png"
+                alt="Imagen de la municipalidad de La Plata"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </article>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
