@@ -1,0 +1,23 @@
+#salvappvidas_logo {
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#center_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  display: flex;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+}
