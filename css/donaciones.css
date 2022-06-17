@@ -23,9 +23,6 @@
     border-radius: 150px;
 }
 
-.row {
-}
-
 body {
     /* Location of the image */
     background-image: url("../Images/mapa.jpg");
@@ -47,4 +44,15 @@ body {
     /* Set a background color that will be displayed
     while the background image is loading */
     background-color: #464646;
+}
+
+.rectangulo1{
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    left: 0px;
+    bottom: -80px;
+
+    background: #65D1CD;
+    border-radius: 0px 400px 0px 0px;
 }
