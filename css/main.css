@@ -258,6 +258,14 @@
 
     color: #ffffff;
   }
+
+  .sub_title {
+    width: 100vw;
+  }
+
+  .screen_article {
+    width: 100%;
+  }
 }
 
 span {
