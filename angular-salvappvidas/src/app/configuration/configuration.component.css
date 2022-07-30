@@ -1,0 +1,71 @@
+.donationcard {
+  min-height: 100vh;
+}
+
+.pantalla100 {
+  min-height: 100vh;
+}
+
+#salvappvidas_logo {
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+.padear {
+  padding-right: 30px;
+}
+
+.container {
+  padding: 0px;
+  margin: 0px;
+  min-width: 95vw;
+  min-height: 95vh;
+}
+
+.imagenCircular {
+  width: 50px;
+  height: 50px;
+  border-radius: 150px;
+}
+
+.rectangulo1 {
+  position: absolute;
+  width: 60%;
+  height: 5%;
+  left: 0px;
+  bottom: -80px;
+
+  background: #65d1cd;
+  border-radius: 0px 400px 0px 0px;
+}
+
+.adorno1 {
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  right: 0px;
+  top: 0px;
+
+  background: #65d1cd;
+  border-radius: 0px 0px 0px 400px;
+}
+
+.adorno2 {
+  position: absolute;
+  width: 25%;
+  height: 90%;
+  right: 0px;
+  top: 0px;
+
+  background: #3266f2;
+  border-radius: 0px 0px 0px 400px;
+}
+
+.foto {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 7%;
+  top: 5%;
+}
