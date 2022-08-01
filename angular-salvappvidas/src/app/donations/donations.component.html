@@ -1,1 +1,117 @@
-<p>donations works!</p>
+<main role="main" class="container">
+  <header class="row">
+    <div class="col-5 donationcard bg-light">
+      <div class="container-fluid mx-4 padear mt-4">
+        <header>
+          <h3>Donaciones</h3>
+        </header>
+        <form
+          (ngSubmit)="guardar()"
+          autocomplete="off"
+          [formGroup]="miFormulario"
+          class="mt-4"
+        >
+          <label for="nombre" class="form-label mt-2">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            class="form-control"
+            placeholder="Juan"
+            formControlName="nombre"
+          />
+          <p class="form-text text-danger mb-2" *ngIf="campoNoValido('nombre')">
+            Se debe ingresar un nombre de más de 3 caracteres
+          </p>
+          <label for="mail" class="form-label mt-2">Mail</label>
+          <input
+            type="text"
+            id="mail"
+            class="form-control"
+            placeholder="Juan@gmail.com"
+            formControlName="mail"
+          />
+          <p class="form-text text-danger mb-2" *ngIf="campoNoValido('mail')">
+            Se debe ingresar un mail válido
+          </p>
+          <label for="numeroDeTelefono" class="form-label mt-2"
+            >Numero de telefono</label
+          >
+          <input
+            type="number"
+            id="numeroDeTelefono"
+            class="form-control"
+            placeholder="2212341234"
+            formControlName="telefono"
+          />
+          <p
+            class="form-text text-danger mb-2"
+            *ngIf="campoNoValido('telefono')"
+          >
+            Se debe ingresar un teléfono válido
+          </p>
+          <label for="TipoDonacion" class="form-label mt-2"
+            >Tipo de donacion</label
+          >
+          <select
+            name="TipoDonacion"
+            id="TipoDonacion"
+            class="form-select"
+            formControlName="donacion"
+          >
+            <option value="Ropa">Ropa</option>
+            <option value="Sangre">Sangre</option>
+            <option value="Comida">Comida</option>
+          </select>
+          <p
+            class="form-text text-danger mb-2"
+            *ngIf="campoNoValido('donacion')"
+          >
+            Se debe seleccionar un tipo de donación
+          </p>
+          <label for="TipoDonacion" class="form-label mt-2"
+            >Centro de donacion</label
+          >
+          <select
+            name="centro"
+            id="centro"
+            class="form-select"
+            formControlName="centro"
+            (change)="onChange($event.target)"
+          >
+            <option *ngFor="let centro of centros" [value]="centro.center">
+              {{ centro.nombre }}
+            </option>
+          </select>
+          <p class="form-text text-danger mb-2" *ngIf="campoNoValido('centro')">
+            Se debe seleccionar un centro de donación
+          </p>
+          <div class="d-grid gap-2 mt-5 align-bottom">
+            <button type="submit" class="btn btn-primary">Continuar</button>
+          </div>
+          <div
+            class="alert alert-primary mt-2"
+            role="alert"
+            *ngIf="donacionExitosa"
+          >
+            La donación se ha registrado con éxito
+          </div>
+        </form>
+      </div>
+    </div>
+    <div #mapa2 class="col-7 mapa-container"></div>
+    <div class="fila">
+      <label class="form-label">Zoom: {{ zoomLevel | number: "2.2-2" }} </label>
+      <input
+        type="range"
+        class="form-range"
+        [value]="zoomLevel"
+        min="1"
+        max="18"
+        (input)="zoomCambio(zoomInput.value)"
+        #zoomInput
+      />
+      <button class="btn btn-primary" (click)="zoomOut()">-</button>
+      <button class="btn btn-primary float-end" (click)="zoomIn()">+</button>
+    </div>
+  </header>
+</main>

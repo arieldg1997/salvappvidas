@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  deploy:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: salvappvidas-server
+    restart: always
+    ports:
+      - '8080:80'

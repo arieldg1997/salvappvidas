@@ -69,3 +69,7 @@
   right: 7%;
   top: 5%;
 }
+
+* {
+  font-size: var(--font-size-local);
+}

@@ -9,7 +9,7 @@ import { DonationsComponent } from './donations/donations.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { CentersComponent } from './centers/centers.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +18,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     DonationsComponent,
     ConfigurationComponent,
     CentersComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
