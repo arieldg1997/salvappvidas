@@ -3,7 +3,7 @@
     <div class="col-5 donationcard bg-light">
       <div class="container-fluid mx-4 padear mt-4">
         <header>
-          <Form>
+          <form autocomplete="off">
             <label class="form-label" for="buscar">Buscar</label>
             <div class="input-group mb-3">
               <input
@@ -12,19 +12,29 @@
                 placeholder="Buscar"
                 aria-describedby="button-addon2"
                 id="buscar"
+                name="termino"
+                [(ngModel)]="termino"
+                (input)="teclaPresionada()"
               />
               <button class="btn btn-primary" type="button" id="button-addon2">
                 Buscar
               </button>
             </div>
-          </Form>
+          </form>
           <h3>Centros de donacion</h3>
         </header>
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="centrosAMostrar.length === 0"
+        >
+          No se encontraron centros similares a {{ termino }}
+        </div>
         <div class="list-group">
           <a
             (click)="irMarcador(centro.marker!)"
             class="list-group-item list-group-item-action container-fluid"
-            *ngFor="let centro of centros"
+            *ngFor="let centro of centrosAMostrar"
           >
             <div class="row mt-3">
               <div class="col-1">
