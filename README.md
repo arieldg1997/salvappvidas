@@ -17,3 +17,9 @@ El sitio brinda ayudas de accesibilidad para quién lo desee y necesite. Se pued
 Grupo 10 integrado por:
 - Ariel Dapia Graziani
 - Nicolas Cesar Champane Peñalva
+
+## Instrucciones para lanzar aplicación
+
+1. Ingresar al directorio angular-salvappvidas
+2. Ejecutar docker-compose up -d
+3. Acceder a http://localhost:8080/
