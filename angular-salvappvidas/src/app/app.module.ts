@@ -10,6 +10,7 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { CentersComponent } from './centers/centers.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CentersComponent,
     NavbarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })
