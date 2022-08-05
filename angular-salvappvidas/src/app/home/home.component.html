@@ -1,3 +1,103 @@
+<button type="button" #boton id="boton" class="btn btn-primary" data-toggle="modal" data-target="#tuto" style="display: none;">
+  Launch demo modal
+</button>
+
+<div class="modal fade bd-example-modal-lg" #tuto id="tuto" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tutorial</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="yaLoVi()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div *ngIf="pag==0">
+          <p>Bienvenidos al tutorial de Salvappvidas, donde te haremos un recorrido por la aplicacion.</p>
+          <p>Ni bien entramos a la aplicacion la primer pagina que se muestra es la pagina de inicio, la cual posee varias funcionalidades</p>
+          <hr>
+          <div class="row">
+            <div class="col-6 px-3">
+              <img src="../../assets/Medidor.png" alt="Medidor de alerta por inundacion" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <p>En el medidor del inicio se mostrara el nivel de alerta de inundacion de que hay en la ciudad en este momento</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-6 px-3">
+              <img src="../../assets/Numeros de contacto.png" alt="Numeros de contacto en caso de emergencia" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <p>Tambien se muestran varios numeros de contacto en caso de emergencia</p>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="pag==1">
+          <p>Para llegar a pedir un turno para hacer donaciones se utiliza la barra de navegacion de la siguiente forma</p>
+          <img src="../../assets/Navegar a donaciones.png" alt="Navegacion hasta donaciones" class="img-fluid">
+          <hr>
+          <div class="row">
+            <div class="col-6 px-3">
+              <img src="../../assets/Formulario donaciones.png" alt="Formulario para sacar turno para donaciones" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <p>Completando el formulario se saca turno para donar en un centro especifico de donaciones</p>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="pag==2">
+          <p>Para ver los centros de donacion de la ciudad se utiliza la barra de navegacion de la siguiente forma</p>
+          <img src="../../assets/Navegar a centros de donaciones.png" alt="Navegacion hasta centros de donacion" class="img-fluid">
+          <hr>
+          <div class="row">
+            <div class="col-6 px-3">
+              <img src="../../assets/Menu de centros.png" alt="Menu de centros de donacion" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <p>Desde el menu de la izquierda se puede filtrar y seleccionar centros</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-6 px-3">
+              <img src="../../assets/Mapa.png" alt="Mapa" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <p>Desde el mapa se pueden visualizar las diferentes los centros seleccionados y hacer zoom desde la ventana de abajo</p>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="pag==3">
+          <p>La pestaña de mas informacion posee informacion acerca del proyecto</p>
+          <img src="../../assets/Navegacion a mas info.png" alt="Navegacion hasta mas informacion" class="img-fluid">
+        </div>
+        <div *ngIf="pag==4">
+          <p>Para navegar a configuracion se utiliza la barra de navegacion de la siguiente forma</p>
+          <img src="../../assets/Navegar a config.png" alt="Navegacion hasta configuracion" class="img-fluid">
+          <hr>
+          <div class="row">
+            <div class="col-6 px-3">
+              <img src="../../assets/Menu de config.png" alt="Menu de configuracion" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <p>Desde de configuracion se puede cambiar el tamaño de la letra y tambien volver a lanzar este tutorial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" *ngIf="pag>0" class="btn btn-secondary" (click)="menosPagina()">Anterior</button>
+        <button type="button" *ngIf="pag<4" class="btn btn-primary" (click)="masPagina()">Siguiente</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="yaLoVi()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid">
   <header>
     <div class="row article align-items-center">

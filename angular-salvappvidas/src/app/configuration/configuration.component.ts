@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-configuration',
@@ -6,7 +7,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./configuration.component.css'],
 })
 export class ConfigurationComponent implements OnInit, OnDestroy {
-  constructor() {}
+  constructor(private router:Router) {}
 
   private root = document.documentElement;
   public value: string | null = '1';
@@ -27,5 +28,10 @@ export class ConfigurationComponent implements OnInit, OnDestroy {
     localStorage.setItem('fontSize', this.value!);
     this.new_value = this.value;
     this.root.style.setProperty('--font-size', this.new_value + 'rem');
+  }
+
+  irAlTuto(){
+    localStorage.setItem('tutorial', 'false');
+    this.router.navigate(['./home'])
   }
 }
